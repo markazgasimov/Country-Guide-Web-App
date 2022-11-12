@@ -16,7 +16,12 @@ btn.addEventListener('click', function (name) {
             population.innerHTML = data[0].population
             currency.innerHTML = data[0].currencies[Object.keys(data[0].currencies)].name
             commonlang.innerHTML = Object.values(data[0].languages).toString().split(",").join(", ")
-            console.log(data[0].flags.svg);
         })
-})
+        .catch(() => {
+            if (countryName.length == 0) {
+                result.innerHTML = `<h3>The input field cannot be empty</h3>`;
+            } else {
+                result.innerHTML = `<h3>Please enter a valid country name.</h3>`;
+            }
+        })
 
