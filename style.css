@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kaushan Script', cursive;
+    background-color: rgb(255, 230, 0);
+}
+
+.box {
+    width: 410px;
+    height: 600px;
+    background-color: aliceblue;
+    margin-top: 25px;
+    border-radius: 25px;
+    -webkit-box-shadow: 1px 2px 148px 62px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 1px 2px 148px 62px rgba(0, 0, 0, 0.9);
+    box-shadow: 1px 2px 148px 62px rgba(0, 0, 0, 0.9);
+}
+
+.input-box {
+    display: flex;
+    margin-top: 20px;
+}
+
+.box .input-box .input {
+    padding: 15px 35px;
+    border: none;
+    border-bottom: 1px solid blue;
+    border-radius: 20px;
+    -webkit-box-shadow: 1px 2px 148px 62px blue;
+    -moz-box-shadow: 1px 2px 148px 62px blue;
+    box-shadow: 1px 2px 148px 62px blue;
+    margin-left: 5px;
+}
+
+.box .input-box .submit {
+    padding: 15px 17px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    -webkit-box-shadow: 1px 2px 148px 62px blue;
+    -moz-box-shadow: 1px 2px 148px 62px blue;
+    box-shadow: 1px 2px 148px 62px blue;
+}
+
+.box .result-box {
+    margin: 25px 0 0 20px;
+}
+
+.box .result-box h1{
+    font-size: 18px;
+    margin: 14px 0;
+}
+
+.box .result-box .same{
+    font-size: 23px;
+}
+
