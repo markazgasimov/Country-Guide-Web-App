@@ -59,4 +59,15 @@ body {
     font-size: 23px;
 }
 
+@media only screen and (max-width: 426px){
+    .box{
+        width: 390px;
+    }
+    .box .input-box .input{
+        padding: 15px 30px;
+    } 
+    .box .input-box .submit{
+        padding: 15px 12px;
+    }
+}
 
