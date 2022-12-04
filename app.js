@@ -19,3 +19,4 @@ btn.addEventListener('click', function (name) {
         })
 })
 
+console.log(data[0].flags[0]);
