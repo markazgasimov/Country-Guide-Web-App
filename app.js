@@ -5,6 +5,7 @@ const continent = document.querySelector(".continent")
 const population = document.querySelector(".population")
 const currency = document.querySelector(".currency")
 const commonlang = document.querySelector(".commonlang")
+let image = document.querySelector("#myimage")
 
 btn.addEventListener('click', function (name) {
     let url = "https://restcountries.com/v3.1/name/" + input.value + "?fullText=true"
@@ -16,7 +17,9 @@ btn.addEventListener('click', function (name) {
             population.innerHTML = data[0].population
             currency.innerHTML = data[0].currencies[Object.keys(data[0].currencies)].name
             commonlang.innerHTML = Object.values(data[0].languages).toString().split(",").join(", ")
+            let text = data[0].flags.svg;
+            let result = text.substring(0, text.length -0);
+            image.src = result
         })
 })
 
-console.log(data[0].flags[0]);
