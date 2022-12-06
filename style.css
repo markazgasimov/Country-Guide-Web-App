@@ -26,14 +26,14 @@ body {
 }
 
 .box .input-box .input {
-    padding: 15px 35px;
+    padding: 15px 30px;
     border: none;
     border-bottom: 1px solid blue;
     border-radius: 20px;
     -webkit-box-shadow: 1px 2px 148px 62px blue;
     -moz-box-shadow: 1px 2px 148px 62px blue;
     box-shadow: 1px 2px 148px 62px blue;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .box .input-box .submit {
@@ -56,11 +56,8 @@ body {
 }
 .imgbox{
     overflow: hidden;
-    width: 110px;
-    height: 100px;
-    -webkit-box-shadow: 1px 2px 148px 62px blue;
-    -moz-box-shadow: 1px 2px 148px 62px blue;
-    box-shadow: 1px 2px 148px 62px blue;
+    width: 150px;
+    height: 150px;
 }
 .imgbox img{
     width: 100%;
