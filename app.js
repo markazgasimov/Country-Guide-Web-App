@@ -9,6 +9,7 @@ let image = document.querySelector("#myimage")
 
 btn.addEventListener('click', function (name) {
     let url = "https://restcountries.com/v3.1/name/" + input.value + "?fullText=true"
+    // console.log(url);
     fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -17,8 +18,8 @@ btn.addEventListener('click', function (name) {
             population.innerHTML = data[0].population
             commonlang.innerHTML = Object.values(data[0].languages).toString().split(",").join(", ")
             currency.innerHTML = data[0].currencies[Object.keys(data[0].currencies)].name
-            let text = data[0].flags.svg;
-            let result = text.substring(0, text.length -0);
+            let text = data[0].flags.svg; //"https://flagcdn.com/w320/tr.png"
+            let result = text.substring(0, text.length);
             image.src = result
             input.value = ""
         })
