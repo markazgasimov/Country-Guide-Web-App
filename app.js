@@ -15,11 +15,13 @@ btn.addEventListener('click', function (name) {
             capital.innerHTML = data[0].capital[0]
             continent.innerHTML = data[0].continents[0]
             population.innerHTML = data[0].population
-            currency.innerHTML = data[0].currencies[Object.keys(data[0].currencies)].name
             commonlang.innerHTML = Object.values(data[0].languages).toString().split(",").join(", ")
+            currency.innerHTML = data[0].currencies[Object.keys(data[0].currencies)].name
             let text = data[0].flags.svg;
             let result = text.substring(0, text.length -0);
             image.src = result
+            input.value = ""
         })
+        .catch(err => alert("Siz olke adini duzgun daxil etmemisiniz!!!"))
 })
 
